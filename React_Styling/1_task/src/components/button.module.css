@@ -1,0 +1,10 @@
+.button_vote {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgb(128,128,128)
+}
+
+.button_vote:hover {
+    background-color: hsl(223, 19%, 93%);
+}

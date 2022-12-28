@@ -1,0 +1,35 @@
+.form_comment {
+    background-color: white;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 10% 1fr 15%;
+    align-self: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.btn_send {
+    text-transform: uppercase;
+    border: none;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 3rem;
+}
+
+.btn_send:hover {
+    background-color: hsl(239, 23%, 40%);
+}
+
+.submit_text {
+    width: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    padding: 12px 20px;
+}
+
+label {
+    text-align: right;
+}

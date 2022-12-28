@@ -1,0 +1,37 @@
+.comment_container {
+    background-color: white;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 15% auto;
+    height: 7rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: rgb(128,128,128);
+}
+
+.comment_votes {
+    background-color: hsl(228, 33%, 97%);
+    width: 50%;
+    margin: 5px auto;
+    display: grid;
+    align-self: center;
+    text-align: center;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.comment_votes_number {
+    color: hsl(238, 40%, 52%);
+}
+
+.comment_author {
+    font-weight: 500;
+    text-transform: 'uppercase'
+}
+.comment_data {
+    margin-right: 20px;
+    display: grid;
+    align-self: center;
+    font-size: 16px;
+}
