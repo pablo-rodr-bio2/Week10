@@ -13,7 +13,7 @@ function App() {
         <br />
         <SubmitComment />
       </div>
-      </CommentsProvider>
+    </CommentsProvider>
   );
 }
 

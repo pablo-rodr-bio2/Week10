@@ -13,7 +13,7 @@ const StyledApp = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
   label {
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ function App() {
     <Theme>
       <StyledApp>
         <label>Buttons</label>
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Button variant='Primary' size='normal'>Primary</Button>
           <Button variant='Secondary' size='large'>Secondary</Button>
           <Button variant='Warning' >Warning</Button>
@@ -42,7 +42,7 @@ function App() {
         </div>
 
         <label>Loader</label>
-        <div>
+        <div style={{display: 'flex'}}>
           <Loader variant='Primary' size="small" />
           <Loader variant='Secondary' size="normal" />
           <Loader variant='Warning' size="large" />

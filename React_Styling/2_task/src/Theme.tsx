@@ -1,5 +1,7 @@
 import { ThemeProvider } from "styled-components";
 
+// TODO
+// lower case for keys 
 const themes = {
     
     // Buttons //
@@ -7,22 +9,22 @@ const themes = {
     Primary: {
         backgroundColor: '#c7edef',
         color: '#707070',
-        textShadow: ' 1px 1px 1px #ffe1cd'
+        textShadow: '1px 1px 1px #ffe1cd'
     },
     Secondary: {
         backgroundColor: '#707070',
         color: '#c7edef',
-        textShadow: ' 1px 1px 1px #f9ee54'
+        textShadow: '1px 1px 1px #f9ee54'
     },
     Warning: {
         backgroundColor: '#f9ee54',
         color: '#f3a903',
-        textShadow: ' 1px 1px 1px #f3a903'
+        textShadow: '1px 1px 1px #f3a903'
     },
     Danger: {
         backgroundColor: '#9a67bd',
         color: '#ffe1cd',
-        textShadow: ' 1px 1px 1px #ffe1cd'
+        textShadow: '1px 1px 1px #ffe1cd'
     },
     size: {
         small: {
@@ -47,7 +49,7 @@ const themes = {
 }
 
 type Props = {
-    children: JSX.Element,
+    children: React.ReactNode,
 }
 
 const Theme = ({ children }: Props) => (
@@ -55,27 +57,3 @@ const Theme = ({ children }: Props) => (
 )
 
 export default Theme
-
-
-// const variantOptions: { [key: string]: { [key: string]: string } } = {
-//     Primary: {
-//         backgroundColor: '#c7edef',
-//         color: '#707070',
-//         textShadow: ' 1px 1px 1px #ffe1cd'
-//     },
-//     Secondary: {
-//         backgroundColor: '#707070',
-//         color: '#c7edef',
-//         textShadow: ' 1px 1px 1px #f9ee54'
-//     },
-//     Warning: {
-//         backgroundColor: '#f9ee54',
-//         color: '#f3a903',
-//         textShadow: ' 1px 1px 1px #f3a903'
-//     },
-//     Danger: {
-//         backgroundColor: '#9a67bd',
-//         color: '#ffe1cd',
-//         textShadow: ' 1px 1px 1px #ffe1cd'
-//     }
-// }

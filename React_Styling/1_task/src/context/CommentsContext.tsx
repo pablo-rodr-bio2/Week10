@@ -9,6 +9,8 @@ export interface CommentsContextProps {
 
 const CommentsContext = createContext<CommentsContextProps | undefined>(undefined)
 
+// check type ReactNode?
+
 type CommentProviderProps = {
     children: JSX.Element
 }

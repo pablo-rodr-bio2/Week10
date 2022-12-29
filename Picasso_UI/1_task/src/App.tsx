@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Picasso from '@toptal/picasso-provider'
-import { Button, Container, Grid, Helpbox, Page, Paper, Section, Table } from '@toptal/picasso'
+import { Container, Page, Table } from '@toptal/picasso'
 import { data } from './db/db'
-import PageTopBar from '@toptal/picasso/PageTopBar/PageTopBar';
 import { Form } from '@toptal/picasso-forms';
 
 const universes = data
@@ -25,6 +24,7 @@ function App() {
   const [heroes, setHeroes] = useState<Heroes[]>(data)
 
   const pushNewHero = (values: { ogName: string; heroName: string; isCape: string; newUniverse: string; }) => {
+
     const id = Number(crypto.randomUUID)
     const name = values.ogName
     const hero = values.heroName
@@ -34,6 +34,19 @@ function App() {
     const newHero = {id, name, hero, cape, universe}
   
     setHeroes((previousHeroes) => [...previousHeroes,newHero] )
+  }
+
+  const heroNameValidator =(value?: string) => {
+    if(value === undefined) return undefined
+
+    const isHeroNameAlready = heroes.find(hero => {
+      if( hero.hero.split(' ')[0] === value) return true
+      return false
+    })
+
+    if(isHeroNameAlready) return `${value} is already taken`
+    
+    return undefined
   }
 
   return (
@@ -60,6 +73,7 @@ function App() {
                   set('')
                 }}
                 required
+                validate={heroNameValidator}
                 name='heroName'
                 label='Hero Name'
                 placeholder='How do you want to call our hero'

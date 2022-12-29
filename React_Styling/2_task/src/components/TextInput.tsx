@@ -6,13 +6,13 @@ type Props = {
 }
 
 const StyledTextInput = styled.input<Props>`
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-width: ${props => props.fullWidth ? '100%' : '40rem'};
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: ${props => props.fullWidth ? '100%' : '40rem'};
 `
 
 const TextInput = ({  fullWidth }: Props) => {
